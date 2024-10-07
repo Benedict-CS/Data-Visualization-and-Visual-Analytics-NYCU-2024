@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cm {
+    margin: 20px;
+}
+
+.legend {
+    margin: 10px 0;
+}
+
+.axis-label {
+    font-size: 12px;
+}
+
+text {
+    fill: #000;
+}
+
+svg {
+    display: block;
+    margin: auto;
+}
+
+.legend-title {
+    font-size: 14px;
+    text-align: center;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.legend-text {
+    font-size: 12px;
+    fill: #000;
+}
