@@ -1,0 +1,37 @@
+.centered-wrapper {
+    position: relative;
+    text-align: center;
+  }
+  
+  .axis line,
+  .axis path {
+    shape-rendering: crispEdges;
+    stroke: black;
+    fill: none;
+  }
+  
+  .axis text {
+    font-family: sans-serif;
+    font-size: 12px;
+    fill: black; 
+    visibility: visible;
+  }
+  
+  .axis:hover {
+    cursor: grab;
+  }
+  
+  .axis:active {
+    cursor: grabbing; 
+  }
+  
+  .foreground path {
+    fill: none;
+    stroke-width: 1.5;
+    opacity: 0.7;
+  }
+  
+  .legend {
+    font-size: 14px;
+  }
+  
