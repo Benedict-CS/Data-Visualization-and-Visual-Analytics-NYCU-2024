@@ -1,4 +1,4 @@
-const dataPath = "http://vis.lab.djosix.com:2024/data/air-pollution.csv";
+const dataPath = "./air-pollution.csv";
 
 let selectedYear = "overall";
 let selectedCategory = "SO2";
