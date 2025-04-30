@@ -13,7 +13,7 @@ var color = d3.scaleOrdinal()
     .domain(["Iris-setosa", "Iris-versicolor", "Iris-virginica"])
     .range(["red", "green", "blue"]);
 
-d3.csv("http://vis.lab.djosix.com:2024/data/iris.csv", function (data) {
+d3.csv("./iris.csv", function (data) {
     data.forEach(function (d) {
         d['sepal length'] = +d['sepal length'];
         d['sepal width'] = +d['sepal width'];
