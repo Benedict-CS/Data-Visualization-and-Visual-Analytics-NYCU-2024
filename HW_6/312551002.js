@@ -9,7 +9,7 @@ const svg = d3.select("#my_dataviz")
     .append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-const data_path = "http://vis.lab.djosix.com:2024/data/ma_lga_12345.csv";
+const data_path = "./ma_lga_12345.csv";
 
 d3.csv(data_path).then(function (data) {
     var data_1 = {};
