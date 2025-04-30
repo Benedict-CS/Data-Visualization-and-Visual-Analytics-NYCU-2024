@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taipei MRT Passenger Flow</title>
+    <link rel="stylesheet" href="312551002.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    h1{
+        padding-top: 80px;
+    }
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/mac.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+
+    .center{
+    text-align: center;
+    }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="./312551002.html" class="w3-bar-item w3-button w3-wide">Taipei Metro Data Visualization</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="./312551002.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Taipei MRT Passenger Station Flow</a>
+        <a href="./graph2.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Total Ridership Over Time</a>
+        <a href="./graph3.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Ridership - Stacked Line Chart</a>
+      </div>
+    </div>
+  </div>
+  <h1>2017 - 2024 &nbsp;&nbsp; Taipei MRT Passenger Flow     </h1> 
+  
+    
+  <div class="controls">
+      <label for="year-select">Select Year:</label>
+      <select id="year-select"></select>
+
+      <label for="month-select">Select Month:</label>
+      <select id="month-select"></select>
+
+      <label for="date-select">Select Date:</label>
+      <select id="date-select"></select>
+
+      <label for="sort-line">Sort by Line:</label>
+      <select id="sort-line">
+          <option value="">All Lines</option>
+          <option value="環狀線">環狀線</option>
+          <option value="板藍線">板藍線</option>
+          <option value="中和線">中和線</option>
+          <option value="淡水線">淡水線</option>
+          <option value="新店線">新店線</option>
+          <option value="文湖線">文湖線</option>
+      </select>
+
+      <label for="sort-order">Sort Order:</label>
+      <select id="sort-order">
+          <option value="descending">Descending</option>
+          <option value="ascending">Ascending</option>
+      </select>
+
+      <p id="update-button"> </p>
+  </div>
+
+  <div id="chart-container" class="chart-container"></div>
+
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="312551002.js"></script>
+
+</body>
+</html>

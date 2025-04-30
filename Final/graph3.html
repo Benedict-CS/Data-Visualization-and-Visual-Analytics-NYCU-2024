@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Group 14</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.center{
+            text-align: center;
+        }
+        svg {
+            display: block;
+            margin: auto;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: auto;
+            height: auto;
+            padding: 5px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="./index.html" class="w3-bar-item w3-button w3-wide">Taipei Metro Data Visualization</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="./312551002.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Taipei MRT Passenger Station Flow</a>
+                <a href="./graph2.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Total Ridership Over Time</a>
+                <a href="./graph3.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Ridership - Stacked Line Chart</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="my_dataviz" style="padding-top: 80px; text-align: center;">
+        <h1>Ridership - Stacked Line Chart</h1>
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" name="start-date">
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" name="end-date">
+        <button id="reset-button">Reset</button>
+        <svg width="1200" height="800"></svg>
+    </div>
+
+    <script src="graph3.js"></script>
+</body>
+</html>
