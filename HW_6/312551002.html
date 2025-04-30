@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW6_ThemeRiver</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="312551002.css">
+</head>
+
+<body class="container text-center">
+    <h1 class="my-3">HW6_ThemeRiver</h1>
+
+    <div class="row my-3">
+        <div id="my_dataviz" class="col-12 col-md-8"></div>
+
+        <div class="m-auto col-12 col-md-4">
+            <p>💡 Drag the blocks to reorder keys or click to hide/show streams.</p>
+            <div id="blocks" class="list-group col draggable"></div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="312551002.js"></script>
+</body>
+
+</html>

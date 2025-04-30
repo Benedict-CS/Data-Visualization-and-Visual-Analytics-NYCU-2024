@@ -1,0 +1,56 @@
+.draggable {
+    cursor: pointer;
+    -webkit-user-drag: element;
+}
+
+#my_dataviz svg {
+    background-color: white;
+}
+
+.list-group-item {
+    cursor: move;
+}
+
+.tooltip {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #333;
+    padding: 8px;
+    position: absolute;
+    display: none;
+    font-size: 14px;
+    pointer-events: none;
+    border-radius: 4px;
+}
+
+.myArea {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.hovered {
+    stroke: #000;
+    stroke-width: 2px;
+    filter: url(#glow);
+}
+
+.not-hovered {
+    opacity: 0.2;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .row {
+        display: block;
+    }
+
+    #my_dataviz {
+        margin-bottom: 20px;
+    }
+}
