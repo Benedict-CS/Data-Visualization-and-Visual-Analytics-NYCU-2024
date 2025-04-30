@@ -1,4 +1,4 @@
-const data_path = 'http://vis.lab.djosix.com:2024/data/abalone.data';
+const data_path = './abalone.data';
 
 const margin = { top: 70, right: 30, bottom: 50, left: 30 },
     width = 650 - margin.left - margin.right,
