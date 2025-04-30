@@ -1,4 +1,4 @@
-const data_path = "https://raw.githubusercontent.com/AndyChiangSH/1121-data-visualization/refs/heads/main/Homeworks/HW1_Scatter%20Plots/iris.csv";
+const data_path = "./iris.csv";
 
 var size = 200;
 var padding = 30;
