@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW7 Horizon Chart</title>
+    <link rel="stylesheet" href="312551002.css">
+</head>
+<body>
+    <h1>HW7 Horizon Chart</h1>
+    <div class="selection-group">
+        <span class="label">Year:</span>
+        <div class="btn-group" id="year-buttons">
+            <button class="btn active" data-year="overall">Overall</button>
+            <button class="btn" data-year="2017">2017</button>
+            <button class="btn" data-year="2018">2018</button>
+            <button class="btn" data-year="2019">2019</button>
+        </div>
+    </div>
+    <div class="selection-group">
+        <span class="label">Category:</span>
+        <div class="btn-group" id="category-buttons">
+            <button class="btn active" data-category="SO2">SO2</button>
+            <button class="btn" data-category="NO2">NO2</button>
+            <button class="btn" data-category="O3">O3</button>
+            <button class="btn" data-category="CO">CO</button>
+            <button class="btn" data-category="PM10">PM10</button>
+            <button class="btn" data-category="PM2.5">PM2.5</button>
+        </div>
+    </div>
+
+    <br/>
+    <p class="tip">
+        Tip: Scroll to zoom in and out on the chart.
+    </p>
+
+    <div id="chart-container" class="chart-container"></div>
+
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="//unpkg.com/horizon-timeseries-chart"></script>
+    <script src="312551002.js"></script>
+</body>
+</html>
