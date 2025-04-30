@@ -17,7 +17,7 @@ const tooltip = d3.select("body").append("div")
     .style("opacity", 0);
 
 // Load the data
-const data_path = "https://raw.githubusercontent.com/AndyChiangSH/1121-data-visualization/refs/heads/main/Homeworks/HW5_Stacked%20Bar%20Charts/TIMES_WorldUniversityRankings_2024.csv";
+const data_path = "./TIMES_WorldUniversityRankings_2024.csv";
 
 d3.csv(data_path).then(function (data) {
     // Filter data and exclude scores_overall from stack calculation
